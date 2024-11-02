@@ -3,7 +3,7 @@ import random
 
 # prizes for winning numbers
 def prizes(no_of_winning_numbers):
-    winnings = {3: "£20", 4: "£40", 5: "100", 6: "£10000", 7: "£10000000"}
+    winnings = {3: "£20", 4: "£40", 5: "£100", 6: "£10000", 7: "£10000000"}
     return winnings[no_of_winning_numbers]
 
 
@@ -49,7 +49,7 @@ def run():
     # Random winning ticket with 7 unique numbers
     winning_ticket = random.sample(range(1, 50), 7)
 
-    print(f"Winning numbers: {winning_ticket}")  # uncomment to test
+    # print(f"Winning numbers: {winning_ticket}")  # uncomment to test
 
     no_of_winning_numbers, lottery_ticket = players_ticket(winning_ticket)
     ticket_output_message(winning_ticket, no_of_winning_numbers, lottery_ticket)
